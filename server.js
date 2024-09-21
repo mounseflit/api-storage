@@ -35,7 +35,7 @@ const upload = multer({ storage: storage });
 // Route for uploading files
 app.post('/upload', upload.single('file'), (req, res) => {
   if (!req.file) {
-    return res.status(400).json({ error: 'File upload failed' });
+    return res.status(400).json({ error: 'No file uploaded' });
   }
 
   // File uploaded successfully, return public URL
