@@ -1,0 +1,23 @@
+{
+  "name": "file-storage-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"  // Use nodemon for development
+  },
+  "dependencies": {
+    "cloudinary": "^1.28.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "multer-storage-cloudinary": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7" // For development
+  },
+  "engines": {
+    "node": ">=14.x" // Specify your Node.js version
+  }
+}
